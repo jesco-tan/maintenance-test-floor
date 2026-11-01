@@ -1,0 +1,2303 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "repository": "https://github.com/jesco-tan/maintenance-decision-lab",
+    "commit": "1aa807e4b5a2c987abc414147f540e9d88b6b8f9",
+    "fixture": "scripts/export-replay.ts: mechanics lives",
+    "command": "bun run export -- <source-checkout>",
+    "generatedAt": "2026-11-01T17:56:28.902Z",
+    "classification": "mechanics demonstration",
+    "inputSha256": "aa8d528d89a154694daee4f81cc78b53cfc7784885c4d07e0642ad7496cc6148",
+    "notes": "Constructed edge cases, not held-out evaluation. Risk values are prescribed demonstration scores, not a calibrated model."
+  },
+  "sensorLabels": [
+    "Toy sensor 1 (unitless)"
+  ],
+  "engines": [
+    {
+      "id": 201,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.05
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.082
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.114
+          ]
+        },
+        {
+          "cycle": 4,
+          "sensors": [
+            0.14600000000000002
+          ]
+        },
+        {
+          "cycle": 5,
+          "sensors": [
+            0.178
+          ]
+        },
+        {
+          "cycle": 6,
+          "sensors": [
+            0.21000000000000002
+          ]
+        },
+        {
+          "cycle": 7,
+          "sensors": [
+            0.242
+          ]
+        },
+        {
+          "cycle": 8,
+          "sensors": [
+            0.274
+          ]
+        },
+        {
+          "cycle": 9,
+          "sensors": [
+            0.306
+          ]
+        },
+        {
+          "cycle": 10,
+          "sensors": [
+            0.338
+          ]
+        },
+        {
+          "cycle": 11,
+          "sensors": [
+            0.37
+          ]
+        },
+        {
+          "cycle": 12,
+          "sensors": [
+            0.40199999999999997
+          ]
+        },
+        {
+          "cycle": 13,
+          "sensors": [
+            0.434
+          ]
+        },
+        {
+          "cycle": 14,
+          "sensors": [
+            0.466
+          ]
+        },
+        {
+          "cycle": 15,
+          "sensors": [
+            0.498
+          ]
+        },
+        {
+          "cycle": 16,
+          "sensors": [
+            0.53
+          ]
+        },
+        {
+          "cycle": 17,
+          "sensors": [
+            0.562
+          ]
+        },
+        {
+          "cycle": 18,
+          "sensors": [
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.05
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.095
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.14
+          ]
+        },
+        {
+          "cycle": 4,
+          "sensors": [
+            0.185
+          ]
+        },
+        {
+          "cycle": 5,
+          "sensors": [
+            0.22999999999999998
+          ]
+        },
+        {
+          "cycle": 6,
+          "sensors": [
+            0.27499999999999997
+          ]
+        },
+        {
+          "cycle": 7,
+          "sensors": [
+            0.32
+          ]
+        },
+        {
+          "cycle": 8,
+          "sensors": [
+            0.365
+          ]
+        },
+        {
+          "cycle": 9,
+          "sensors": [
+            0.41
+          ]
+        },
+        {
+          "cycle": 10,
+          "sensors": [
+            0.45499999999999996
+          ]
+        },
+        {
+          "cycle": 11,
+          "sensors": [
+            0.49999999999999994
+          ]
+        },
+        {
+          "cycle": 12,
+          "sensors": [
+            0.545
+          ]
+        },
+        {
+          "cycle": 13,
+          "sensors": [
+            0.9
+          ]
+        },
+        {
+          "cycle": 14,
+          "sensors": [
+            0.91
+          ]
+        },
+        {
+          "cycle": 15,
+          "sensors": [
+            0.92
+          ]
+        },
+        {
+          "cycle": 16,
+          "sensors": [
+            0.93
+          ]
+        },
+        {
+          "cycle": 17,
+          "sensors": [
+            0.9400000000000001
+          ]
+        },
+        {
+          "cycle": 18,
+          "sensors": [
+            0.9500000000000001
+          ]
+        },
+        {
+          "cycle": 19,
+          "sensors": [
+            0.96
+          ]
+        },
+        {
+          "cycle": 20,
+          "sensors": [
+            0.97
+          ]
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.04
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.07
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.1
+          ]
+        },
+        {
+          "cycle": 4,
+          "sensors": [
+            0.13
+          ]
+        },
+        {
+          "cycle": 5,
+          "sensors": [
+            0.16
+          ]
+        },
+        {
+          "cycle": 6,
+          "sensors": [
+            0.19
+          ]
+        },
+        {
+          "cycle": 7,
+          "sensors": [
+            0.22
+          ]
+        },
+        {
+          "cycle": 8,
+          "sensors": [
+            0.25
+          ]
+        },
+        {
+          "cycle": 9,
+          "sensors": [
+            0.27999999999999997
+          ]
+        },
+        {
+          "cycle": 10,
+          "sensors": [
+            0.31
+          ]
+        },
+        {
+          "cycle": 11,
+          "sensors": [
+            0.33999999999999997
+          ]
+        },
+        {
+          "cycle": 12,
+          "sensors": [
+            0.36999999999999994
+          ]
+        },
+        {
+          "cycle": 13,
+          "sensors": [
+            0.39999999999999997
+          ]
+        },
+        {
+          "cycle": 14,
+          "sensors": [
+            0.43
+          ]
+        },
+        {
+          "cycle": 15,
+          "sensors": [
+            0.45999999999999996
+          ]
+        },
+        {
+          "cycle": 16,
+          "sensors": [
+            0.48999999999999994
+          ]
+        },
+        {
+          "cycle": 17,
+          "sensors": [
+            0.52
+          ]
+        },
+        {
+          "cycle": 18,
+          "sensors": [
+            0.9
+          ]
+        }
+      ]
+    }
+  ],
+  "retrospective": [
+    {
+      "engineId": 201,
+      "failureCycle": 18
+    },
+    {
+      "engineId": 202,
+      "failureCycle": 20
+    },
+    {
+      "engineId": 203,
+      "failureCycle": 18
+    }
+  ],
+  "scenario": {
+    "id": "extended",
+    "label": "Extended toy replay",
+    "splitSeed": 23,
+    "riskHorizon": 2,
+    "replacementCost": 1,
+    "failureCost": 5,
+    "unusedLifeCostPerCycle": 0.01,
+    "slotsPerCycle": 1,
+    "startCycles": {
+      "201": 1,
+      "202": 6,
+      "203": 13
+    },
+    "heldOutEngineIds": []
+  },
+  "policies": [
+    {
+      "id": "fixed",
+      "label": "Fixed cycle",
+      "sourceName": "fixed-18",
+      "rule": {
+        "kind": "fixed",
+        "interval": 18
+      },
+      "trace": [
+        {
+          "engineId": 201,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 4,
+          "period": 4,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 5,
+          "period": 5,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 6,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 7,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 8,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 9,
+          "period": 9,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 4,
+          "period": 9,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 10,
+          "period": 10,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 5,
+          "period": 10,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 11,
+          "period": 11,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 6,
+          "period": 11,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 12,
+          "period": 12,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 7,
+          "period": 12,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 13,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 8,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 1,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 14,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 9,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 2,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 15,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 10,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 3,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 16,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 11,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 4,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 17,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 12,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 5,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 18,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        },
+        {
+          "engineId": 202,
+          "cycle": 13,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 6,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 14,
+          "period": 19,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 7,
+          "period": 19,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 15,
+          "period": 20,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 8,
+          "period": 20,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 16,
+          "period": 21,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 9,
+          "period": 21,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 17,
+          "period": 22,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 10,
+          "period": 22,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 18,
+          "period": 23,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 2,
+          "cost": 1.02
+        },
+        {
+          "engineId": 203,
+          "cycle": 11,
+          "period": 23,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 12,
+          "period": 24,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 13,
+          "period": 25,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 14,
+          "period": 26,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 15,
+          "period": 27,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 16,
+          "period": 28,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 17,
+          "period": 29,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 18,
+          "period": 30,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        }
+      ],
+      "summary": {
+        "totalCost": 3.02,
+        "planned": 3,
+        "failures": 0,
+        "unusedLife": 2,
+        "usedSlots": 3,
+        "offeredSlots": 30,
+        "utilization": 0.1,
+        "costBreakdown": {
+          "planned": 3,
+          "unexpectedFailure": 0,
+          "unusedLife": 0.02
+        }
+      }
+    },
+    {
+      "id": "sensor",
+      "label": "Sensor threshold",
+      "sourceName": "sensor-1-high-0.7",
+      "rule": {
+        "kind": "sensor",
+        "sensorIndex": 0,
+        "direction": 1,
+        "threshold": 0.7
+      },
+      "trace": [
+        {
+          "engineId": 201,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 4,
+          "period": 4,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 5,
+          "period": 5,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 6,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 7,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 8,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 9,
+          "period": 9,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 4,
+          "period": 9,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 10,
+          "period": 10,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 5,
+          "period": 10,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 11,
+          "period": 11,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 6,
+          "period": 11,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 12,
+          "period": 12,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 7,
+          "period": 12,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 13,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 8,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 1,
+          "period": 13,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 14,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 9,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 2,
+          "period": 14,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 15,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 10,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 3,
+          "period": 15,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 16,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 11,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 4,
+          "period": 16,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 17,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 12,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 5,
+          "period": 17,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 18,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "unexpected_failure",
+          "unusedLife": 0,
+          "cost": 5
+        },
+        {
+          "engineId": 202,
+          "cycle": 13,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 7,
+          "cost": 1.07
+        },
+        {
+          "engineId": 203,
+          "cycle": 6,
+          "period": 18,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 7,
+          "period": 19,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 8,
+          "period": 20,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 9,
+          "period": 21,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 10,
+          "period": 22,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 11,
+          "period": 23,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 12,
+          "period": 24,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 13,
+          "period": 25,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 14,
+          "period": 26,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 15,
+          "period": 27,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 16,
+          "period": 28,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 17,
+          "period": 29,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 18,
+          "period": 30,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        }
+      ],
+      "summary": {
+        "totalCost": 7.07,
+        "planned": 2,
+        "failures": 1,
+        "unusedLife": 7,
+        "usedSlots": 2,
+        "offeredSlots": 30,
+        "utilization": 0.06666666666666667,
+        "costBreakdown": {
+          "planned": 2,
+          "unexpectedFailure": 5,
+          "unusedLife": 0.07
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "label": "Risk score demo",
+      "sourceName": "risk-0.6",
+      "rule": {
+        "kind": "risk",
+        "threshold": 0.6,
+        "model": "Prescribed squared-sensor demonstration scores, not calibrated probabilities"
+      },
+      "trace": [
+        {
+          "engineId": 201,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": 0.0025000000000000005,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": 0.006724000000000001,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": 0.012996,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 4,
+          "period": 4,
+          "estimatedRisk": 0.021316000000000005,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 5,
+          "period": 5,
+          "estimatedRisk": 0.031684,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 6,
+          "period": 6,
+          "estimatedRisk": 0.04410000000000001,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": 0.0025000000000000005,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 7,
+          "period": 7,
+          "estimatedRisk": 0.058564,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": 0.009025,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 8,
+          "period": 8,
+          "estimatedRisk": 0.07507600000000002,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": 0.019600000000000003,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 9,
+          "period": 9,
+          "estimatedRisk": 0.093636,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 4,
+          "period": 9,
+          "estimatedRisk": 0.034225,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 10,
+          "period": 10,
+          "estimatedRisk": 0.11424400000000001,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 5,
+          "period": 10,
+          "estimatedRisk": 0.05289999999999999,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 11,
+          "period": 11,
+          "estimatedRisk": 0.1369,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 6,
+          "period": 11,
+          "estimatedRisk": 0.07562499999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 12,
+          "period": 12,
+          "estimatedRisk": 0.16160399999999997,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 7,
+          "period": 12,
+          "estimatedRisk": 0.1024,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 13,
+          "period": 13,
+          "estimatedRisk": 0.188356,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 8,
+          "period": 13,
+          "estimatedRisk": 0.13322499999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 1,
+          "period": 13,
+          "estimatedRisk": 0.0016,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 14,
+          "period": 14,
+          "estimatedRisk": 0.21715600000000002,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 9,
+          "period": 14,
+          "estimatedRisk": 0.16809999999999997,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 2,
+          "period": 14,
+          "estimatedRisk": 0.004900000000000001,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 15,
+          "period": 15,
+          "estimatedRisk": 0.248004,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 10,
+          "period": 15,
+          "estimatedRisk": 0.20702499999999996,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 3,
+          "period": 15,
+          "estimatedRisk": 0.010000000000000002,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 16,
+          "period": 16,
+          "estimatedRisk": 0.28090000000000004,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 11,
+          "period": 16,
+          "estimatedRisk": 0.24999999999999994,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 4,
+          "period": 16,
+          "estimatedRisk": 0.016900000000000002,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 17,
+          "period": 17,
+          "estimatedRisk": 0.31584400000000007,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 202,
+          "cycle": 12,
+          "period": 17,
+          "estimatedRisk": 0.29702500000000004,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 5,
+          "period": 17,
+          "estimatedRisk": 0.0256,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 201,
+          "cycle": 18,
+          "period": 18,
+          "estimatedRisk": 0.5625,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "unexpected_failure",
+          "unusedLife": 0,
+          "cost": 5
+        },
+        {
+          "engineId": 202,
+          "cycle": 13,
+          "period": 18,
+          "estimatedRisk": 0.81,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 7,
+          "cost": 1.07
+        },
+        {
+          "engineId": 203,
+          "cycle": 6,
+          "period": 18,
+          "estimatedRisk": 0.0361,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 7,
+          "period": 19,
+          "estimatedRisk": 0.0484,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 8,
+          "period": 20,
+          "estimatedRisk": 0.0625,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 9,
+          "period": 21,
+          "estimatedRisk": 0.07839999999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 10,
+          "period": 22,
+          "estimatedRisk": 0.0961,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 11,
+          "period": 23,
+          "estimatedRisk": 0.11559999999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 12,
+          "period": 24,
+          "estimatedRisk": 0.13689999999999997,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 13,
+          "period": 25,
+          "estimatedRisk": 0.15999999999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 14,
+          "period": 26,
+          "estimatedRisk": 0.18489999999999998,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 15,
+          "period": 27,
+          "estimatedRisk": 0.21159999999999995,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 16,
+          "period": 28,
+          "estimatedRisk": 0.24009999999999992,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 17,
+          "period": 29,
+          "estimatedRisk": 0.27040000000000003,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 203,
+          "cycle": 18,
+          "period": 30,
+          "estimatedRisk": 0.81,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        }
+      ],
+      "summary": {
+        "totalCost": 7.07,
+        "planned": 2,
+        "failures": 1,
+        "unusedLife": 7,
+        "usedSlots": 2,
+        "offeredSlots": 30,
+        "utilization": 0.06666666666666667,
+        "costBreakdown": {
+          "planned": 2,
+          "unexpectedFailure": 5,
+          "unusedLife": 0.07
+        }
+      }
+    }
+  ]
+}

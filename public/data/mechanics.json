@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "repository": "https://github.com/jesco-tan/maintenance-decision-lab",
+    "commit": "1aa807e4b5a2c987abc414147f540e9d88b6b8f9",
+    "fixture": "scripts/export-replay.ts: mechanics lives",
+    "command": "bun run export -- <source-checkout>",
+    "generatedAt": "2026-11-01T17:56:28.901Z",
+    "classification": "mechanics demonstration",
+    "inputSha256": "17f286b356294f315583b39bafb72f3823c8cdbc1f865e16fc84522858307030",
+    "notes": "Constructed edge cases, not held-out evaluation. Risk values are prescribed demonstration scores, not a calibrated model."
+  },
+  "sensorLabels": [
+    "Toy sensor 1 (unitless)"
+  ],
+  "engines": [
+    {
+      "id": 101,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.1
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.4
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.1
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.4
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "observations": [
+        {
+          "cycle": 1,
+          "sensors": [
+            0.1
+          ]
+        },
+        {
+          "cycle": 2,
+          "sensors": [
+            0.4
+          ]
+        },
+        {
+          "cycle": 3,
+          "sensors": [
+            0.7
+          ]
+        },
+        {
+          "cycle": 4,
+          "sensors": [
+            0.9
+          ]
+        }
+      ]
+    }
+  ],
+  "retrospective": [
+    {
+      "engineId": 101,
+      "failureCycle": 3
+    },
+    {
+      "engineId": 102,
+      "failureCycle": 3
+    },
+    {
+      "engineId": 103,
+      "failureCycle": 4
+    }
+  ],
+  "scenario": {
+    "id": "mechanics",
+    "label": "Mechanics demonstration",
+    "splitSeed": 23,
+    "riskHorizon": 2,
+    "replacementCost": 1,
+    "failureCost": 5,
+    "unusedLifeCostPerCycle": 0.01,
+    "slotsPerCycle": 1,
+    "startCycles": {
+      "101": 1,
+      "102": 1,
+      "103": 6
+    },
+    "heldOutEngineIds": []
+  },
+  "policies": [
+    {
+      "id": "fixed",
+      "label": "Fixed cycle",
+      "sourceName": "fixed-3",
+      "rule": {
+        "kind": "fixed",
+        "interval": 3
+      },
+      "trace": [
+        {
+          "engineId": 101,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        },
+        {
+          "engineId": 102,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "unexpected_failure",
+          "unusedLife": 0,
+          "cost": 5
+        },
+        {
+          "engineId": 103,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 1,
+          "cost": 1.01
+        }
+      ],
+      "summary": {
+        "totalCost": 7.01,
+        "planned": 2,
+        "failures": 1,
+        "unusedLife": 1,
+        "usedSlots": 2,
+        "offeredSlots": 6,
+        "utilization": 0.3333333333333333,
+        "costBreakdown": {
+          "planned": 2,
+          "unexpectedFailure": 5,
+          "unusedLife": 0.01
+        }
+      }
+    },
+    {
+      "id": "sensor",
+      "label": "Sensor threshold",
+      "sourceName": "sensor-1-high-0.7",
+      "rule": {
+        "kind": "sensor",
+        "sensorIndex": 0,
+        "direction": 1,
+        "threshold": 0.7
+      },
+      "trace": [
+        {
+          "engineId": 101,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        },
+        {
+          "engineId": 102,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "unexpected_failure",
+          "unusedLife": 0,
+          "cost": 5
+        },
+        {
+          "engineId": 103,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": null,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": null,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 1,
+          "cost": 1.01
+        }
+      ],
+      "summary": {
+        "totalCost": 7.01,
+        "planned": 2,
+        "failures": 1,
+        "unusedLife": 1,
+        "usedSlots": 2,
+        "offeredSlots": 6,
+        "utilization": 0.3333333333333333,
+        "costBreakdown": {
+          "planned": 2,
+          "unexpectedFailure": 5,
+          "unusedLife": 0.01
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "label": "Risk score demo",
+      "sourceName": "risk-0.7",
+      "rule": {
+        "kind": "risk",
+        "threshold": 0.7,
+        "model": "Prescribed demonstration scores, not calibrated probabilities"
+      },
+      "trace": [
+        {
+          "engineId": 101,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": 0.1,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 1,
+          "period": 1,
+          "estimatedRisk": 0.1,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": 0.4,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 102,
+          "cycle": 2,
+          "period": 2,
+          "estimatedRisk": 0.4,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 101,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": 0.9,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 0,
+          "cost": 1
+        },
+        {
+          "engineId": 102,
+          "cycle": 3,
+          "period": 3,
+          "estimatedRisk": 0.9,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "unexpected_failure",
+          "unusedLife": 0,
+          "cost": 5
+        },
+        {
+          "engineId": 103,
+          "cycle": 1,
+          "period": 6,
+          "estimatedRisk": 0.1,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 2,
+          "period": 7,
+          "estimatedRisk": 0.4,
+          "requested": false,
+          "availableSlots": 1,
+          "chosenAction": "continue",
+          "consequence": "operating",
+          "unusedLife": 0,
+          "cost": 0
+        },
+        {
+          "engineId": 103,
+          "cycle": 3,
+          "period": 8,
+          "estimatedRisk": 0.7,
+          "requested": true,
+          "availableSlots": 1,
+          "chosenAction": "replace",
+          "consequence": "planned_replacement",
+          "unusedLife": 1,
+          "cost": 1.01
+        }
+      ],
+      "summary": {
+        "totalCost": 7.01,
+        "planned": 2,
+        "failures": 1,
+        "unusedLife": 1,
+        "usedSlots": 2,
+        "offeredSlots": 6,
+        "utilization": 0.3333333333333333,
+        "costBreakdown": {
+          "planned": 2,
+          "unexpectedFailure": 5,
+          "unusedLife": 0.01
+        }
+      }
+    }
+  ]
+}
