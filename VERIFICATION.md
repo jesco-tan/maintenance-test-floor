@@ -14,7 +14,7 @@ Implementation date: 2 November 2026, Asia/Singapore.
 - Initialized a local Git repository. Dependencies, output, the source checkout, and the planning document are ignored. The application branch is prepared for a standalone repository; internal checkpoint refs are excluded from pushes.
 - Retained IBM Plex Sans's SIL Open Font License in `public/fonts/OFL.txt`.
 
-A production build was not run, following the user's instruction. HTTP and TypeScript checks do not establish browser layout or graphics correctness.
+The first production build was subsequently authorized by the user and completed successfully in GitHub Actions. HTTP and TypeScript checks do not establish browser layout or graphics correctness.
 
 ## Manual checks still required
 
@@ -32,10 +32,12 @@ These are unverified, not passing claims:
 - Measure frame rate on a named desktop and phone. Record device, operating system, browser/version, display size, and pixel ratio. Targets: near 60 fps desktop and at least 30 fps phone.
 - After an explicitly requested production build, measure compressed initial app plus toy-data transfer. Target: under 2 MB excluding optional fonts.
 
-## Evidence gates before publication
+## Reuse notes
 
-Resolve source and derived-fixture redistribution terms. Select the final repository and hosting arrangement. No source license or NASA permissions are inferred from public availability.
+Source provenance is retained. No broader source license or NASA permissions are inferred from public availability. Publication was explicitly requested by the repository owner.
 
 ## Pages preparation
 
-A manual GitHub Actions workflow is configured to check, test, build, and deploy the site. It has no push trigger, so pushing source does not run a production build. The first deployment remains pending explicit build authorization.
+A manual GitHub Actions workflow is configured to check, test, build, and deploy the site. It has no push trigger, so pushing source does not run a production build. The user explicitly authorized the production build. GitHub Actions run https://github.com/jesco-tan/maintenance-test-floor/actions/runs/41335035914 passed installation, type checks, all 34 tests, the production build, artifact upload, and deployment. The site is live at https://jesco-tan.github.io/maintenance-test-floor/.
+
+Published-site HTTP checks returned 200 for the entry page, main JavaScript and CSS assets, and all three replay fixtures. The planning document returns 404, is ignored locally, and is absent from the published application branch history. Internal workspace checkpoint refs were not uploaded. Browser and device checks above remain unverified.

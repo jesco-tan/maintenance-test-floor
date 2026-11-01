@@ -110,7 +110,7 @@ Release 1.1 capacity/cost presets and NASA scenarios are intentionally outside t
 
 Repository: https://github.com/jesco-tan/maintenance-test-floor
 
-Project site address after its first deployment: https://jesco-tan.github.io/maintenance-test-floor/
+Live project site: https://jesco-tan.github.io/maintenance-test-floor/
 
 The workflow in `.github/workflows/pages.yml` installs the locked dependencies, runs type checks and replay tests, builds Vite assets with the Pages project base path, and uploads and deploys `dist`. It requires no source checkout or data regeneration.
 
