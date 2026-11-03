@@ -38,10 +38,13 @@ const labels: Record<string, string> = { fixed: 'Fixed cycle', sensor: 'Sensor t
 function summaryOf(result: any) {
   return Object.fromEntries(['totalCost', 'planned', 'failures', 'unusedLife', 'usedSlots', 'offeredSlots', 'utilization', 'costBreakdown'].map(key => [key, result[key]])) as Replay['policies'][number]['summary'];
 }
-function base(group: any[], classification: Replay['provenance']['classification'], input: string): Omit<Replay, 'policies' | 'scenario'> {
+const companionCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+const exporterSha256 = createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
+function base(group: any[], classification: Replay['provenance']['classification'], input: string, fixture: string): Omit<Replay, 'policies' | 'scenario'> {
   return { schemaVersion: 1, provenance: {
     repository: 'https://github.com/jesco-tan/maintenance-decision-lab', commit: pinned,
-    fixture: classification === 'held-out toy evaluation' ? 'tests/fixtures/toy-lives.json' : 'scripts/export-replay.ts: mechanics lives',
+    fixture, metadataRevision: 2,
+    companionSource: { repository: 'https://github.com/jesco-tan/maintenance-test-floor', commit: companionCommit, exporterSha256 },
     command: 'bun run export -- <source-checkout>', generatedAt: new Date().toISOString(), classification,
     inputSha256: createHash('sha256').update(input).digest('hex'),
     notes: classification === 'held-out toy evaluation' ? 'Three held-out lives from the source split. Rules tuned on separate validation engines. No NASA data. No allocation ranks exported.' : 'Constructed edge cases, not held-out evaluation. Risk values are prescribed demonstration scores, not a calibrated model.',
@@ -51,7 +54,7 @@ function base(group: any[], classification: Replay['provenance']['classification
   };
 }
 const group = report.engineIds.test.map((id: number) => lives.find((life: any) => life.id === id));
-const heldOut: Replay = { ...base(group, 'held-out toy evaluation', toyInput),
+const heldOut: Replay = { ...base(group, 'held-out toy evaluation', toyInput, 'tests/fixtures/toy-lives.json'),
   scenario: { id: 'held-out-default', label: 'Held-out toy fleet', splitSeed: report.splitSeed, riskHorizon: report.riskHorizon,
     ...comparison.assumptions, startCycles: report.startCycles.heldOutTest, heldOutEngineIds: report.engineIds.test },
   policies: comparison.results.filter((p: any) => p.kind !== 'oracle').map((p: any) => {
@@ -69,7 +72,7 @@ const scenario = { id: 'mechanics', label: 'Mechanics demonstration', splitSeed:
 const mechanicsRules: Rule[] = [{ kind: 'fixed', interval: 3 }, { kind: 'sensor', sensorIndex: 0, direction: 1, threshold: 0.7 },
   { kind: 'risk', threshold: 0.7, model: 'Prescribed demonstration scores, not calibrated probabilities' }];
 const mechanicsPolicies = [policies.fixedInterval(3), policies.sensorThreshold(0.7), policies.learnedRisk({ predict: (history: any[]) => history.at(-1).sensors[0] }, 0.7)];
-const mechanics: Replay = { ...base(mechanicsLives, 'mechanics demonstration', JSON.stringify(mechanicsInput)), scenario,
+const mechanics: Replay = { ...base(mechanicsLives, 'mechanics demonstration', JSON.stringify(mechanicsInput), 'scripts/export-replay.ts: mechanicsInput'), scenario,
   policies: mechanicsPolicies.map((policy: any, i: number) => { const result = simulate(mechanicsLives, policy, scenario); const id = ['fixed', 'sensor', 'risk'][i];
     return { id, label: id === 'risk' ? 'Risk score demo' : labels[id], sourceName: policy.name, rule: mechanicsRules[i], trace: result.trace, summary: summaryOf(result) }; }),
 };
@@ -85,7 +88,7 @@ const extendedScenario = { ...scenario, id: 'extended', label: 'Extended toy rep
 const extendedRules: Rule[] = [{ kind: 'fixed', interval: 18 }, { kind: 'sensor', sensorIndex: 0, direction: 1, threshold: 0.7 },
   { kind: 'risk', threshold: 0.6, model: 'Prescribed squared-sensor demonstration scores, not calibrated probabilities' }];
 const extendedPolicies = [policies.fixedInterval(18), policies.sensorThreshold(0.7), policies.learnedRisk({ predict: (history: any[]) => history.at(-1).sensors[0] ** 2 }, 0.6)];
-const extended: Replay = { ...base(extendedLives, 'mechanics demonstration', JSON.stringify(extendedInput)), scenario: extendedScenario,
+const extended: Replay = { ...base(extendedLives, 'mechanics demonstration', JSON.stringify(extendedInput), 'scripts/export-replay.ts: extendedInput'), scenario: extendedScenario,
   policies: extendedPolicies.map((policy: any, i: number) => {
     const result = simulate(extendedLives, policy, extendedScenario); const id = ['fixed', 'sensor', 'risk'][i];
     return { id, label: id === 'risk' ? 'Risk score demo' : labels[id], sourceName: policy.name, rule: extendedRules[i], trace: result.trace, summary: summaryOf(result) };

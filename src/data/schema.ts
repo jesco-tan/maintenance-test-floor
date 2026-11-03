@@ -17,7 +17,8 @@ export interface Policy { id: string; label: string; sourceName: string; rule: R
 export interface Replay {
   schemaVersion: 1;
   provenance: { repository: string; commit: string; fixture: string; command: string; generatedAt: string;
-    classification: 'held-out toy evaluation' | 'mechanics demonstration'; notes: string; inputSha256: string };
+    classification: 'held-out toy evaluation' | 'mechanics demonstration'; notes: string; inputSha256: string;
+    metadataRevision?: 2; companionSource?: { repository: string; commit: string; exporterSha256: string } };
   scenario: { id: string; label: string; splitSeed: number; riskHorizon: number; slotsPerCycle: number;
     replacementCost: number; failureCost: number; unusedLifeCostPerCycle: number;
     startCycles: Record<string, number>; heldOutEngineIds: number[] };
@@ -45,6 +46,13 @@ export function validateReplay(input: unknown): Replay {
   requireThat(/^[a-f0-9]{40}$/.test(r.provenance.commit) && /^[a-f0-9]{64}$/.test(r.provenance.inputSha256), 'source hashes');
   requireThat(!Number.isNaN(Date.parse(r.provenance.generatedAt)), 'generation date');
   requireThat(['held-out toy evaluation', 'mechanics demonstration'].includes(r.provenance.classification), 'classification');
+  if (r.provenance.metadataRevision !== undefined) {
+    const companion = r.provenance.companionSource;
+    requireThat(r.provenance.metadataRevision === 2 && object(companion), 'metadata revision');
+    requireThat(companion.repository === 'https://github.com/jesco-tan/maintenance-test-floor' && /^[a-f0-9]{40}$/.test(companion.commit) && /^[a-f0-9]{64}$/.test(companion.exporterSha256), 'companion provenance');
+    const expected = r.provenance.classification === 'held-out toy evaluation' ? 'tests/fixtures/toy-lives.json' : r.scenario?.id === 'extended' ? 'scripts/export-replay.ts: extendedInput' : 'scripts/export-replay.ts: mechanicsInput';
+    requireThat(r.provenance.fixture === expected, 'fixture locator');
+  }
   requireThat(object(r.scenario), 'missing scenario');
   const s = r.scenario;
   requireThat(typeof s.id === 'string' && typeof s.label === 'string' && Number.isInteger(s.splitSeed) && s.splitSeed >= 0, 'scenario identity');

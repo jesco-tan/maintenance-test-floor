@@ -8,7 +8,13 @@
     "generatedAt": "2026-11-01T17:56:28.901Z",
     "classification": "held-out toy evaluation",
     "inputSha256": "c30ecb1ea891f65041701e12cd19f2825b210d9b32412150a78d47de57c3bbb6",
-    "notes": "Three held-out lives from the source split. Rules tuned on separate validation engines. No NASA data. No allocation ranks exported."
+    "notes": "Three held-out lives from the source split. Rules tuned on separate validation engines. No NASA data. No allocation ranks exported.",
+    "metadataRevision": 2,
+    "companionSource": {
+      "repository": "https://github.com/jesco-tan/maintenance-test-floor",
+      "commit": "f4051d5f6121fe5f8343b09ee61eccdb9776e0de",
+      "exporterSha256": "554d7ef6bdb182b85f71e962d06b4874bf372569a84220ec4eed0610f3f602b8"
+    }
   },
   "sensorLabels": [
     "Toy sensor 1 (unitless)"

@@ -18,7 +18,7 @@ bun run check
 bun run test
 ```
 
-`check` runs TypeScript without emitting files. `test` runs focused replay, accounting, presentation-boundary, and corruption tests. The `build` and `preview` scripts exist for future use. A production build has not been run.
+`check` runs TypeScript without emitting files. `test` runs focused replay, accounting, presentation-boundary, and corruption tests. A production build and deployment were previously recorded in [VERIFICATION.md](VERIFICATION.md). See that record for the checks actually performed.
 
 ## What is included
 
@@ -52,7 +52,7 @@ bun run export -- .source/maintenance-decision-lab
 
 Skip cloning if that checkout already exists. Export refuses a different commit or tracked modifications to source, configuration, or input fixtures. It runs the source evaluator, matches constructor-generated policy identifiers against a structured parameter catalog, attaches the original toy sensor observations, reconciles event accounting with source summaries, and validates both exports before writing them. It rejects unrecognized selected rules rather than guessing parameters from a name.
 
-The provenance includes the source revision, input SHA-256, fixture name, command, dataset classification, and generation timestamp. The timestamp changes on export; all other exported content is deterministic with the pinned source. The adapter exports all three fixtures and can write evaluation reports inside the supplied source checkout's ignored `outputs/` directory.
+The provenance includes the analytical source revision, input SHA-256, exact fixture locator, companion source commit and exporter-file SHA-256, metadata revision, command, classification and generation timestamp. The timestamp changes on export; all other exported content is deterministic with the pinned source. The adapter exports all three fixtures and can write evaluation reports inside the supplied source checkout's ignored `outputs/` directory.
 
 ### Extended toy replay (default)
 
@@ -117,3 +117,7 @@ The workflow in `.github/workflows/pages.yml` installs the locked dependencies, 
 Deployment is manual: in GitHub Actions, select **Deploy GitHub Pages**, then **Run workflow** on `main`. This runs a production build. Automatic builds on push are intentionally disabled. Pages must use **GitHub Actions** as its publishing source.
 
 The local planning document is ignored and excluded from published Git history. Only the application branch is pushed; internal workspace checkpoint refs are not published.
+
+## Toy calibration limits
+
+The three-life held-out toy replay is distinct from FD001. Its one-life calibration sample demonstrates implementation, not externally validated probabilities. The default extended demonstration uses prescribed scores and can rank policies differently from FD001. Fixture metadata revision 2 corrects input locators and records companion provenance without changing any trace, observation, rule, scenario or numerical summary.

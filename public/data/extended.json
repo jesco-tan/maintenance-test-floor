@@ -3,12 +3,18 @@
   "provenance": {
     "repository": "https://github.com/jesco-tan/maintenance-decision-lab",
     "commit": "1aa807e4b5a2c987abc414147f540e9d88b6b8f9",
-    "fixture": "scripts/export-replay.ts: mechanics lives",
+    "fixture": "scripts/export-replay.ts: extendedInput",
     "command": "bun run export -- <source-checkout>",
     "generatedAt": "2026-11-01T17:56:28.902Z",
     "classification": "mechanics demonstration",
     "inputSha256": "aa8d528d89a154694daee4f81cc78b53cfc7784885c4d07e0642ad7496cc6148",
-    "notes": "Constructed edge cases, not held-out evaluation. Risk values are prescribed demonstration scores, not a calibrated model."
+    "notes": "Constructed edge cases, not held-out evaluation. Risk values are prescribed demonstration scores, not a calibrated model.",
+    "metadataRevision": 2,
+    "companionSource": {
+      "repository": "https://github.com/jesco-tan/maintenance-test-floor",
+      "commit": "f4051d5f6121fe5f8343b09ee61eccdb9776e0de",
+      "exporterSha256": "554d7ef6bdb182b85f71e962d06b4874bf372569a84220ec4eed0610f3f602b8"
+    }
   },
   "sensorLabels": [
     "Toy sensor 1 (unitless)"

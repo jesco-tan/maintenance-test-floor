@@ -9,7 +9,7 @@ export function ruleText(policy: Policy, replay: Replay) {
   if (rule.kind === 'fixed') return `Request at local cycle ${rule.interval} or later.`;
   if (rule.kind === 'sensor') return `Request when ${replay.sensorLabels[rule.sensorIndex]} ${rule.direction > 0 ? '≥' : '≤'} ${rule.threshold}.`;
   if (replay.provenance.classification === 'mechanics demonstration') return `Request at demonstration score ≥ ${rule.threshold}. These prescribed scores are not calibrated probabilities.`;
-  return `Request at risk ≥ ${Math.round(rule.threshold * 100)}%. Risk is the probability of failure within the current cycle and the following ${replay.scenario.riskHorizon - 1} cycle(s).`;
+  return `Request at fitted toy risk estimate ≥ ${Math.round(rule.threshold * 100)}%. The target is failure at the current cycle end or within the following ${replay.scenario.riskHorizon - 1} cycle(s). Calibration used one separate toy engine; these probabilities are not externally validated.`;
 }
 export function outcome(event: Trace) {
   const action = event.requested ? event.chosenAction === 'replace' ? 'Request allocated' : 'Request denied' : 'No request';
