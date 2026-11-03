@@ -121,3 +121,7 @@ The local planning document is ignored and excluded from published Git history. 
 ## Toy calibration limits
 
 The three-life held-out toy replay is distinct from FD001. Its one-life calibration sample demonstrates implementation, not externally validated probabilities. The default extended demonstration uses prescribed scores and can rank policies differently from FD001. Fixture metadata revision 2 corrects input locators and records companion provenance without changing any trace, observation, rule, scenario or numerical summary.
+
+## Analytical reproduction, 3 November 2026
+
+The companion analytical repository has independently rerun FD001 and added separate lead-time and repair-capacity sensitivity. This constructed browser replay retains immediate-action single-period mechanics. It does not display those scenarios or contain NASA data. See the analytical REPORT.md for the new evidence.
